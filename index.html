@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitcoin Current Price</title>
+    <link
+      rel="stylesheet"
+      id="font-awesome-css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css?ver=6.5.1"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="google-fonts-css"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&#038;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&#038;display=swap"
+      type="text/css"
+      media="all"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" async></script>
+  </head>
+  <body>
+    <div class="container">
+      <i class="fa-brands fa-bitcoin"></i>
+      <h1>Bitcoin Current Price</h1>
+      <h2 id="price">---</h2>
+      <div class="radios">
+      <input type="radio" name="currency" id="EUR" value="EUR" checked>
+      <label for="EUR">EUR</label>
+      <input type="radio" name="currency" id="GBP" value="GBP">
+      <label for="GBP">GBP</label>
+      <input type="radio" name="currency" id="USD" value="USD">
+      <label for="USD">USD</label>
+    </div>
+
+      <button id="btn">Get Price</button>
+    </div>
+  </body>
+</html>

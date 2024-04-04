@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border: 1px solid #12030928;
+  border-radius: 55px;
+  align-items: center;
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+i {
+  font-size: 3rem;
+  color: #663399;
+  transform: rotate(-14deg);
+  animation: logo 0.5s 1s ease-in-out infinite alternate;
+}
+
+@keyframes logo {
+  0% {
+    transform: rotate(-14deg);
+  }
+  100% {
+    transform: rotate(14deg);
+  }
+}
+
+h1 {
+  color: #120309;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+h2 {
+  color: #307351;
+}
+
+button {
+  background-color: #656839;
+  border: none;
+  color: #fff;
+  padding: 15px 25px;
+  font-family: Roboto, sans-serif;
+  font-size: 1.2rem;
+  border-radius: 55px;
+  transition: .1s ease-in background-color;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #494b29;
+}
+
+.radios {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
