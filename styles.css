@@ -4,6 +4,11 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  margin: 0;
 }
 
 .container {
@@ -17,7 +22,7 @@ body {
   margin: 2rem auto;
 }
 
-i {
+i:first-of-type {
   font-size: 3rem;
   color: #663399;
   transform: rotate(-14deg);
@@ -62,4 +67,39 @@ button:hover {
 .radios {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+}
+
+footer {
+  width: 100%;
+  padding: 0.5rem 0;
+  background: #404ea00f;
+}
+
+footer p, footer small {
+  text-align: center;
+}
+
+footer a {
+  color: #39457b;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer .fa-terminal{
+  transform: rotate(0);
+  font-size: 1rem;
+  color: #39457b;
+  animation: terminal-animate 1.5s infinite;
+}
+
+@keyframes terminal-animate {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

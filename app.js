@@ -1,3 +1,5 @@
+document.getElementById("copyrightYear").innerText = new Date().getFullYear();
+
 const button = document.getElementById("btn");
 const price = document.getElementById("price");
 const container = document.querySelector(".container")
@@ -11,7 +13,7 @@ function getSelectedCurrency() {
   currencyRadioButtons.forEach(function(radioButton) {
     if (radioButton.checked) {
       selectedCurrency = radioButton.value;
-    } 
+    }
   });
 
 }
